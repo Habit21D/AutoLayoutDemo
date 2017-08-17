@@ -33,8 +33,8 @@ UITableViewDataSource
     self.dataArray = @[@"UIView",
                        @"UILabel",
                        @"UIImageView",
-                       @"UITableView",
                        @"UITextView",
+                       @"UITableView",
                        @"UICollectionView",
                        @"UIScrollView"];
     
@@ -84,13 +84,13 @@ UITableViewDataSource
         
         viewController = [[ALImageViewController alloc] init];
         
-    }else if ([title isEqualToString:@"UITableView"]){
-        
-        viewController = [[ALTableViewController alloc] init];
-        
     }else if ([title isEqualToString:@"UITextView"]){
         
         viewController = [[ALTextViewController alloc] init];
+        
+    }else if ([title isEqualToString:@"UITableView"]){
+        
+        viewController = [[ALTableViewController alloc] init];
         
     }else if ([title isEqualToString:@"UICollectionView"]){
         
