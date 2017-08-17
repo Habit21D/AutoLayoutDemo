@@ -11,6 +11,6 @@ demo中介绍了以下内容：
 * UITextView： textView根据输入内容动态变换高度
 * UITableView： tableView的cell不用计算大小，根据cell内容自动变高。并实现了cell中嵌套textView实现变高
 * UICollectionView：cell根据内容确定size
-*UIScrollView：scrollView根据内容自己计算contentSize
+* UIScrollView：scrollView根据内容自己计算contentSize
 
 **autolayout主要的使用都在了，其他视图大家可以举一反三，大同小异**
