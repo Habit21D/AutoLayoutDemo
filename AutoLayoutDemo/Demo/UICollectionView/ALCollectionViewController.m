@@ -38,14 +38,15 @@ UICollectionViewDataSource
     [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(weakSelf.view);
     }];
+   
 }
 
 - (UICollectionView *)collectionView
 {
     if (!_collectionView) {
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-        layout.estimatedItemSize = CGSizeMake(SCREEN_WIDTH/2 - 10, 150);
-        
+        layout.estimatedItemSize = CGSizeMake(SCREEN_WIDTH, 300);
+
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
         _collectionView.backgroundColor = [UIColor whiteColor];
         _collectionView.delegate = self;

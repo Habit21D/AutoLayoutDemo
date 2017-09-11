@@ -13,6 +13,7 @@
 #import "ALTableViewController.h"
 #import "ALTextViewController.h"
 #import "ALCollectionViewController.h"
+#import "ALCollectionViewController2.h"
 #import "ALScrollViewController.h"
 @interface ViewController ()
 <
@@ -36,6 +37,7 @@ UITableViewDataSource
                        @"UITextView",
                        @"UITableView",
                        @"UICollectionView",
+                       @"UICollectionView2",
                        @"UIScrollView"];
     
     self.view.backgroundColor = [UIColor whiteColor];
@@ -95,6 +97,10 @@ UITableViewDataSource
     }else if ([title isEqualToString:@"UICollectionView"]){
         
         viewController = [[ALCollectionViewController alloc] init];
+        
+    }else if ([title isEqualToString:@"UICollectionView2"]){
+     
+        viewController = [[ALCollectionViewController2 alloc] init];
         
     }else if ([title isEqualToString:@"UIScrollView"]){
         

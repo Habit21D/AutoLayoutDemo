@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0782813E920DC0C50A214E4A /* Pods_AutoLayoutDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39C014EB02301FDBC6E5D47B /* Pods_AutoLayoutDemo.framework */; };
+		18B9A2011F668B4800080602 /* ALCollectionViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9A2001F668B4800080602 /* ALCollectionViewController2.m */; };
+		18B9A2041F668B5E00080602 /* ALCollectionViewCell2.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B9A2031F668B5E00080602 /* ALCollectionViewCell2.m */; };
 		3C4E50621F4414EC004B8D39 /* ALCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E50611F4414EC004B8D39 /* ALCollectionCell.m */; };
 		3C4E50651F442255004B8D39 /* ALScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4E50641F442255004B8D39 /* ALScrollView.m */; };
 		3CA0BC3E1F42DCCD00B44457 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0BC3D1F42DCCD00B44457 /* main.m */; };
@@ -53,6 +55,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18B9A1FF1F668B4800080602 /* ALCollectionViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCollectionViewController2.h; sourceTree = "<group>"; };
+		18B9A2001F668B4800080602 /* ALCollectionViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCollectionViewController2.m; sourceTree = "<group>"; };
+		18B9A2021F668B5E00080602 /* ALCollectionViewCell2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCollectionViewCell2.h; sourceTree = "<group>"; };
+		18B9A2031F668B5E00080602 /* ALCollectionViewCell2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCollectionViewCell2.m; sourceTree = "<group>"; };
 		1B1F56B8DD329AAA8D52F0A6 /* Pods-AutoLayoutDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AutoLayoutDemo/Pods-AutoLayoutDemo.release.xcconfig"; sourceTree = "<group>"; };
 		39C014EB02301FDBC6E5D47B /* Pods_AutoLayoutDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayoutDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C4E50601F4414EC004B8D39 /* ALCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCollectionCell.h; sourceTree = "<group>"; };
@@ -231,6 +237,10 @@
 				3CA0BCA21F43052000B44457 /* ALCollectionViewController.m */,
 				3C4E50601F4414EC004B8D39 /* ALCollectionCell.h */,
 				3C4E50611F4414EC004B8D39 /* ALCollectionCell.m */,
+				18B9A1FF1F668B4800080602 /* ALCollectionViewController2.h */,
+				18B9A2001F668B4800080602 /* ALCollectionViewController2.m */,
+				18B9A2021F668B5E00080602 /* ALCollectionViewCell2.h */,
+				18B9A2031F668B5E00080602 /* ALCollectionViewCell2.m */,
 			);
 			path = UICollectionView;
 			sourceTree = "<group>";
@@ -521,6 +531,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B9A2011F668B4800080602 /* ALCollectionViewController2.m in Sources */,
 				3C4E50651F442255004B8D39 /* ALScrollView.m in Sources */,
 				3CA0BCA61F43054300B44457 /* ALScrollViewController.m in Sources */,
 				3C4E50621F4414EC004B8D39 /* ALCollectionCell.m in Sources */,
@@ -530,6 +541,7 @@
 				3CA0BC7B1F42E3ED00B44457 /* ALViewViewController.m in Sources */,
 				3CA0BC821F42F0E700B44457 /* UIButton+ButtonExtension.m in Sources */,
 				3CA0BCA31F43052000B44457 /* ALCollectionViewController.m in Sources */,
+				18B9A2041F668B5E00080602 /* ALCollectionViewCell2.m in Sources */,
 				3CA0BC441F42DCCD00B44457 /* ViewController.m in Sources */,
 				3CA0BC411F42DCCD00B44457 /* AppDelegate.m in Sources */,
 				3CA0BC881F42F52800B44457 /* UILabel+LabelExtension.m in Sources */,
