@@ -6,7 +6,7 @@
 
 demo中介绍了以下内容：
 * UIView：superView根据subView适配宽高，变高动画
-* UILabel：label根据文字内容自动适配大小
+* UILabel：label根据文字内容自动适配大小（支持富文本）
 * UIImageView：imageView根据image适配大小
 * UITextView： textView根据输入内容动态变换高度
 * UITableView： tableView的cell不用计算大小，根据cell内容自动变高。并实现了cell中嵌套textView实现变高
