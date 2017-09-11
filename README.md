@@ -4,6 +4,8 @@
 
 未做swift的demo，swift可以选择snapKit，约束语法同Masonry
 
+[效果](https://github.com/a96369928/AutoLayoutDemo/blob/master/demo.gif)
+
 demo中介绍了以下内容：
 * UIView：superView根据subView适配宽高，变高动画
 * UILabel：label根据文字内容自动适配大小（支持富文本）
