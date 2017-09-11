@@ -13,8 +13,7 @@
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UILabel *textLabel;
-
-
+@property (nonatomic , strong) UILabel *attributeLabel;//富文本
 @end
 
 @implementation ALLabelViewController
@@ -27,6 +26,7 @@
     [self.view addSubview:self.contentView];
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.textLabel];
+    [self.contentView addSubview:self.attributeLabel];
     [self makeConstraints];
 }
 
@@ -55,6 +55,22 @@
     return _textLabel;
 }
 
+- (UILabel *)attributeLabel
+{
+    if (!_attributeLabel) {
+        _attributeLabel = [[UILabel alloc] init];
+        _attributeLabel.backgroundColor = [UIColor magentaColor];
+        _attributeLabel.numberOfLines = 0;
+        NSString *string = @"autolayout对富文本也有很好的支持，它就是自动计算宽高的利器，让开发更简单！你以前对autolayout的使用正确吗？还是说只是把它当作了复杂化的frame呢！！！";
+        NSMutableAttributedString *mulStr = [[NSMutableAttributedString alloc] initWithString:string attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName:[UIFont boldSystemFontOfSize:16]}];
+        [mulStr setAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:9]} range:[string rangeOfString:@"你以前对autolayout的使用正确吗？"]];
+        [mulStr setAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:40]} range:[string rangeOfString:@"对富文本也有很好的支持"]];
+
+        _attributeLabel.attributedText = mulStr;
+    }
+    return _attributeLabel;
+}
+
 - (void)makeConstraints
 {
     WEAKSELF
@@ -70,12 +86,20 @@
         make.top.mas_equalTo(20);
     }];
     
+    
     [self.textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(weakSelf.titleLabel);
         make.top.equalTo(weakSelf.titleLabel.mas_bottom).offset(40);
-        make.bottom.mas_equalTo(-20);//这里把contentView的约束补全，否则不知道它的底边位置
+        
     }];
     
+    [self.attributeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(20);
+        make.right.mas_equalTo(-20);
+        make.top.mas_equalTo(weakSelf.textLabel.mas_bottom).offset(40);
+        make.bottom.mas_equalTo(-20);//这里把contentView的约束补全，否则不知道它的底边位置
+    }];
+
     /*
      label的高度系统自己根据文字计算，不需要我们再设置height。
      我们再也不用麻烦的算高度了！！！！！
