@@ -4,4 +4,6 @@ use_frameworks!
 
 target 'AutoLayoutDemo' do
      pod 'Masonry'
+     pod 'JPFPSStatus'
+
 end

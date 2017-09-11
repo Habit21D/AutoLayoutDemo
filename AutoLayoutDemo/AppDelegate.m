@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "JPFPSStatus.h"
+
 @interface AppDelegate ()
 
 @end
@@ -23,6 +25,10 @@
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
 
+#if defined(DEBUG) || defined(_DEBUG)
+    [[JPFPSStatus sharedInstance] open];
+    //        [FHHFPSIndicator sharedFPSIndicator].fpsLabelPosition = FPSIndicatorPositionTopRight;
+#endif
     return YES;
 }
 
